@@ -7,7 +7,7 @@ This repository presents a QPSK-based digital file transmission system implement
 The system consists of two main components:
 
 * **TX (Transmitter):**
-  Encapsulates file data into framed packets, adds metadata headers, applies QPSK modulation, and transmits via SDR. A ADI PlutoSDR (AD9363) was used in experiment for this part. 
+  Encapsulates file data into framed packets, adds metadata headers, applies QPSK modulation, and transmits via SDR. An ADI PlutoSDR (AD9363) was used in experiment for this part. 
 
 * **RX (Receiver):**
   Demodulates the QPSK signal, verifies packet integrity, scans the stream for file metadata, and reassembles the original file. A Microphase ANTSDR-E316 (AD9361, PlutoSDR firmware) was tested.
