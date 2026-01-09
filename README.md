@@ -1,11 +1,7 @@
 # A-QPSK-Tranceiver-Receiver-System-Based-on-PlutoSDR
 A simple QPSK digital tranceiver/receiver system based on PlutoSDR and GNURadio, which is theoretically compatible to any binary-coded files.
 
-This repository presents a **QPSK-based digital file transmission system** implemented in **GNU Radio Companion (GRC)**.
-The system is designed to transmit **arbitrary binary files** (e.g., `.jpg`, `.txt`, `.pdf`, `.docx`) over a QPSK physical layer, and to **reassemble the original file reliably at the receiver side**.
-Several .jpg files and .docx files have been tested in Win10 & GNURadio V2025.03.14 (RadioCompanion). Since no hash test module is added, there may be error when transmitting larger files.
----
-
+This repository presents a QPSK-based digital file transmission system implemented in GNU Radio Companion. The system is designed to transmit **arbitrary binary files (e.g., `.jpg`, `.txt`, `.pdf`, `.docx`) over a QPSK physical layer, and to **reassemble the original file reliably at the receiver side. Several .jpg files and .docx files have been tested in Win10 & GNURadio V2025.03.14 (RadioCompanion). Since no hash test module is added, there may be error when transmitting larger files.
 ## System Architecture
 
 The system consists of two main components:
@@ -41,9 +37,7 @@ The RX flowgraph demodulates the signal, extracts framed data, and reconstructs 
 This project is inspired by and built upon the open-source work of **Smith**, particularly his QPSK-based video transmission system using AD936x/PlutoSDR.
 You can find his original project file at:
 ```
-{
   https://www.kechuang.org/t/91540](https://www.kechuang.org/t/91540
-}
 ```
 As well as his demo video on Bilibili:
 ```
